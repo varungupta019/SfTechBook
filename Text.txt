@@ -9,4 +9,4 @@ Hello
 second
 
 third
-this time it is edited in the repository
+this time it is edited in the remote repository
