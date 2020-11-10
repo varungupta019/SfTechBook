@@ -1,0 +1,13 @@
+<apex:page controller="Contact_List_Pdf_controller" renderAs="pdf" >
+    <apex:form >
+<apex:pageBlock title="Contacts List" id="contacts_list">
+<apex:pageBlockTable value="{! conlist }" var="ct">
+<apex:column value="{! ct.FirstName }"/>
+<apex:column value="{! ct.LastName }"/>
+<apex:column value="{! ct.phone }"/>
+<apex:column value="{! ct.account.name }"/>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+    
+</apex:page>
