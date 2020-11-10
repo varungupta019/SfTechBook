@@ -4,6 +4,7 @@ public class AccountTriggerHandler {
             account ac = [select id, name, billingstate from account where id=:acc.id];
         ac.shippingstate = ac.billingstate;
         acclist.add(ac);
+        // this changes are amade for new branc gtesting
     }
     update acclist;
     }
